@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Abimael/Desktop/Proyectos/Ecuaciones/app/src/main/res/layout/activity_eformula_g.xml" value="0.1947463768115942" />
-        <entry key="..\:/Users/Abimael/Desktop/Proyectos/Ecuaciones/app/src/main/res/layout/activity_elineales.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/Abimael/Desktop/Proyectos/Ecuaciones/app/src/main/res/layout/activity_eformula_g.xml" value="0.264" />
+        <entry key="..\:/Users/Abimael/Desktop/Proyectos/Ecuaciones/app/src/main/res/layout/activity_elineales.xml" value="0.4" />
+        <entry key="..\:/Users/Abimael/Desktop/Proyectos/Ecuaciones/app/src/main/res/layout/activity_login.xml" value="0.2269021739130435" />
         <entry key="..\:/Users/Abimael/Desktop/Proyectos/Ecuaciones/app/src/main/res/layout/activity_main.xml" value="0.1947463768115942" />
       </map>
     </option>
