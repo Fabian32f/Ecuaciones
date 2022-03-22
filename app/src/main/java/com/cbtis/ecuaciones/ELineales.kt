@@ -36,26 +36,50 @@ class ELineales : AppCompatActivity() {
             val X : Double  // valor de x
             val Y : Double  //valor de y
 
-            DS = (a1.text.toString().toDouble()*b2.text.toString().toDouble())-(b1.text.toString().toDouble()*a2.text.toString().toDouble())
-            Toast.makeText(this,"Determinante del sistema: "+DS, Toast.LENGTH_SHORT).show()
+            if((a1.text.toString().toDouble()) == 0.0){
+                Toast.makeText(this,"No puede existir algun valor con cero", Toast.LENGTH_SHORT).show()
+
+            }else if ((b1.text.toString().toDouble()) == 0.0){
+                Toast.makeText(this,"No puede existir algun valor con cero", Toast.LENGTH_SHORT).show()
+
+            }else if ((c1.text.toString().toDouble()) == 0.0){
+                Toast.makeText(this,"No puede existir algun valor con cero", Toast.LENGTH_SHORT).show()
+
+            }else  if((a2.text.toString().toDouble()) == 0.0){
+                Toast.makeText(this,"No puede existir algun valor con cero", Toast.LENGTH_SHORT).show()
+
+            }else if ((b2.text.toString().toDouble()) == 0.0){
+                Toast.makeText(this,"No puede existir algun valor con cero", Toast.LENGTH_SHORT).show()
+
+            }else if ((c2.text.toString().toDouble()) == 0.0){
+                Toast.makeText(this,"No puede existir algun valor con cero", Toast.LENGTH_SHORT).show()
+
+            }else{
+                DS = (a1.text.toString().toDouble()*b2.text.toString().toDouble())-(b1.text.toString().toDouble()*a2.text.toString().toDouble())
+                Toast.makeText(this,"Determinante del sistema: "+DS, Toast.LENGTH_SHORT).show()
 
 
-            Dx = (c1.text.toString().toDouble()*b2.text.toString().toDouble())-(b1.text.toString().toDouble()*c2.text.toString().toDouble())
-            Toast.makeText(this,"Determinante de X: "+Dx, Toast.LENGTH_SHORT).show()
+                Dx = (c1.text.toString().toDouble()*b2.text.toString().toDouble())-(b1.text.toString().toDouble()*c2.text.toString().toDouble())
+                Toast.makeText(this,"Determinante de X: "+Dx, Toast.LENGTH_SHORT).show()
 
-            Dy = (a1.text.toString().toDouble()*c2.text.toString().toDouble())-(c1.text.toString().toDouble()*a2.text.toString().toDouble())
-            Toast.makeText(this,"Determinante de Y: "+Dy, Toast.LENGTH_SHORT).show()
+                Dy = (a1.text.toString().toDouble()*c2.text.toString().toDouble())-(c1.text.toString().toDouble()*a2.text.toString().toDouble())
+                Toast.makeText(this,"Determinante de Y: "+Dy, Toast.LENGTH_SHORT).show()
 
-            X = Dx/DS
-            Toast.makeText(this,"X = "+X, Toast.LENGTH_SHORT).show()
-            Y = Dy/DS
-            Toast.makeText(this,"Y = "+Y, Toast.LENGTH_SHORT).show()
-            Rx.setText(
-                "El valor de X es: "+X
-            )
-            Ry.setText(
-                "El valor de Y es: "+Y
-            )
+                X = Dx/DS
+                Toast.makeText(this,"X = "+X, Toast.LENGTH_SHORT).show()
+                Y = Dy/DS
+                Toast.makeText(this,"Y = "+Y, Toast.LENGTH_SHORT).show()
+                Rx.setText(
+                    "El valor de X es: "+X
+                )
+                Ry.setText(
+                    "El valor de Y es: "+Y
+                )
+            }
+
+
+
+
 
         }
 
